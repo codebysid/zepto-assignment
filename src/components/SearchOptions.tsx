@@ -18,7 +18,7 @@ function InputSearch() {
   };
 
   return (
-    <div className="flex flex-col justify-between gap-6 h-72 overflow-auto mt-4 shadow-2xl options">
+    <div className="flex flex-col gap-6 h-72 overflow-auto mt-4 shadow-2xl options">
       {state.searchOptions &&
         state.searchOptions
           .filter((ele: SearchOptionsDataInterface) => {
