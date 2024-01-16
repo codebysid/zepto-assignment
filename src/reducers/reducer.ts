@@ -8,7 +8,7 @@ export interface AppState {
 }
 
 export type Actions = {
-  payload: SearchOptionsDataInterface | string;
+  payload: any;
   type: string;
 };
 

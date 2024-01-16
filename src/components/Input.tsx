@@ -31,7 +31,7 @@ const Input = () => {
         type: ACTIONS.REMOVE_ITEM_FROM_SELECTED_OPTIONS_FOR_CHIPS,
         payload: state.lastSelectedItem,
       });
-      dispatch({ type: ACTIONS.REMOVE_LAST_SELECTED_ITEM });
+      dispatch({ type: ACTIONS.REMOVE_LAST_SELECTED_ITEM, payload: undefined });
     }
   };
   return (
