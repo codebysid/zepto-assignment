@@ -3,7 +3,7 @@ import { StateProviderContext } from "../providers/StateProvider";
 
 const useReducerState = () => {
   const context = useContext(StateProviderContext);
-  if (!context) return null;
+  if (!context) throw new Error("Null");
   return context;
 };
 

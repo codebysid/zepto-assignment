@@ -21,6 +21,7 @@ const StateProvider: React.FC<StateProviderProps> = ({ children }) => {
     searchString: "",
     searchOptions: defaultOptions,
     selectedOptionForChips: [],
+    lastSelectedItem: undefined,
   });
 
   return (
