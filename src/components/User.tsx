@@ -25,7 +25,11 @@ const User: React.FC<UserProps> = ({ user, handleFunction, close }) => {
         alt="Display Picture"
       />
       <p className=" text-xl">{user.username}</p>
-      {close && <span>X</span>}
+      {close && (
+        <span className=" border-2 border-transparent rounded-full bg-gray-600 py-1 px-3 hover:border-2 hover:border-black">
+          X
+        </span>
+      )}
     </div>
   );
 };
